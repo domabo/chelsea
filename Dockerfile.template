@@ -1,0 +1,23 @@
+FROM resin/%%RESIN_MACHINE_NAME%%-node:latest
+
+RUN apt-get update && apt-get install -yq \
+    build-essential python libudev-dev && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN wget http://old.openzwave.com/downloads/openzwave-1.4.1.tar.gz && \
+    tar zxvf openzwave-*.gz && \
+    cd openzwave-* && make && sudo make install
+
+ENV LD_LIBRARY_PATH /usr/local/lib 
+
+WORKDIR /usr/src/app
+
+COPY package.json package.json
+
+RUN JOBS=MAX npm install --production --unsafe-perm && npm cache clean --force && rm -rf /tmp/*
+
+COPY . ./
+
+ENV INITSYSTEM on
+
+CMD ["npm", "start"]
