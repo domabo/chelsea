@@ -1,7 +1,7 @@
 {
-  "name": "simple-server-node",
+  "name": "chelsea",
   "version": "1.0.0",
-  "description": "A simple Expressjs Web server on resin.io",
+  "description": "A simple Open ZWave to MQTT Broker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,23 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/resin-io-projects/simple-server-node.git"
+    "url": "git+https://github.com/domabo/chelsea.git"
   },
   "keywords": [
     "resin.io",
-    "webserver",
-    "nodejs",
-    "expressjs"
+    "zwave",
+    "nodejs"
   ],
-  "author": "Shaun Mulligan <shaun@resin.io>",
+  "author": "Guy Barnard <guy@domabo.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/resin-io-projects/simple-server-node/issues"
+    "url": "https://github.com/domabo/chelsea"
   },
-  "homepage": "https://github.com/resin-io-projects/simple-server-node#readme",
+  "homepage": "https:/github.com//domabo/chelsea",
   "dependencies": {
-    "express": "*",
-    "serialport": "^4.0.0",
-    "openzwave-shared": "^1.4.0"
+    "iopa-rest": "^1.4.7",
+    "mqtt": "^2.11.0",
+    "openzwave-shared": "^1.4.0",
+    "serialport": "^4.0.0"
   }
 }
