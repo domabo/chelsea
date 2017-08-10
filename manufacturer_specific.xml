@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ManufacturerSpecificData xmlns='https://github.com/OpenZWave/open-zwave' Revision="7">
+<ManufacturerSpecificData xmlns='https://github.com/OpenZwave/open-zwave' Revision="7">
 	<Manufacturer id="0040" name="2B Electronics">
 	</Manufacturer>
 	<Manufacturer id="0098" name="2GIG Technologies">
@@ -1156,8 +1156,8 @@
 	</Manufacturer>
 	<Manufacturer id="0147" name="Z-Wave.Me">
 		<Product type="0002" id="0003" name="RaZberry Controller"/>
-		<Product type="0400" id="0001" name="RaZberry Controller ZWave+"/>
-		<Product type="0400" id="0002" name="RaZberry Controller 2016 ZWave+"/>
+		<Product type="0400" id="0001" name="RaZberry Controller Zwave+"/>
+		<Product type="0400" id="0002" name="RaZberry Controller 2016 Zwave+"/>
 	</Manufacturer>
 	<Manufacturer id="004f" name="Z-Wave Technologia">
 	</Manufacturer>

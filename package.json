@@ -1,7 +1,7 @@
 {
   "name": "chelsea",
   "version": "1.0.0",
-  "description": "A simple Open ZWave to MQTT Broker",
+  "description": "A simple Open Zwave to MQTT Broker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

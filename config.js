@@ -16,7 +16,7 @@ config.mqtt = {
     }
 };
 
-// https://github.com/OpenZWave/open-zwave/wiki/Config-Options
+// https://github.com/OpenZwave/open-zwave/wiki/Config-Options
 config.zwave = {
     Logging: false, //Enable Logging in the Library or not.
     EnableSIS: true, //Automatically become a SUC if there is No SUC on the network
